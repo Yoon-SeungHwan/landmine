@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SoCar</string>
+    <string name="hint_horizontal">가로 수를 입력하세요. (def 10 / max 20)</string>
+    <string name="hint_input_vertical">세로 수를 입력하세요. (def 10 / max 50)</string>
+    <string name="hint_input_landmine">지뢰 수를 입력하세요. (def 10)</string>
+    <string name="toast_landmine_over">지뢰 수가 너무 많습니다.</string>
+    <string name="btn_play">Play!!</string>
+    <string name="landmine_description">가로 %1$d X 세로 %2$d (지뢰 %3$d)</string>
+</resources>
