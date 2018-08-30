@@ -3,6 +3,7 @@ package me.blog.hwani6736.socar.minsweeper.component.plane;
 import android.graphics.Point;
 import android.util.Log;
 
+import java.util.Arrays;
 import java.util.Locale;
 
 /**
@@ -27,10 +28,12 @@ public class PlaneObject {
         plane = new int[maxSizeX][maxSizeY];
 
         if (landMinePoints != null) {
-            for (Point point : landMinePoints) {
-                if (isIndexBound(point.x, point.y))
-                    markPointRound(point.x, point.y);
-            }
+
+            Arrays.stream(landMinePoints)
+                    .filter(point -> isIndexBound(point.x, point.y))
+                    .forEach(point -> {
+                        markPointRound(point.x, point.y);
+                    });
         }
     }
 
